@@ -1,0 +1,76 @@
+.login-box {
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+
+  .background-image {
+    background-image: url("background6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+   
+  
+  
+
+.button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+.button:hover {
+  background-color: #3e8e41;
+}
+  
+  h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #000;
+  }
+  
+  button[type="button"] {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  

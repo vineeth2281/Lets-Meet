@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lets Meet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6510466b6c.js" crossorigin="anonymous"></script>
+
+    <style>    
+
+        .button {
+         top:6%;
+         left:85%;
+         position: absolute;
+         background-color: #4CAF50; /* Green */
+         border: none;
+         color: white;
+         padding: 16px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         transition-duration: 0.4s;
+         cursor: pointer;
+        }
+
+        .button1 {
+         background-color: white; 
+         color: black; 
+         border: 2px solid #4CAF50;
+        }
+        
+        .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+        }
+ 
+       </style>
+</head>
+
+<body>
+
+    <navbar>
+        <div class="logo">Let's Meet</div>     
+  
+    </navbar>
+    
+
+        <div class="main">
+            <div class="create-join">
+                <div class="text"><div class="head">Create Video Meetings in one-click.</div>
+                <div class="subtext">No sign ups required. Let's get straight to talking.</div>
+                </div>
+                <button id="createroom" class="createroom-butt unselectable">Create Room</button><br>
+                <input type="text" name="room" spellcheck="false" placeholder="Enter Room Code" id="roomcode" class="roomcode"><br>
+                <div class="joinroom unselectable" id="joinroom">Join Room</div>
+            </div>
+            <div class="video-cont">
+                <video class="video-self" autoplay muted playsinline></video>
+                <div class="settings">
+                    <div class="device" id="mic"><i class="fas fa-microphone"></i></div>
+                    <div class="device" id="webcam"><i class="fas fa-video"></i></div>
+                </div>
+            </div>
+        </div>
+        <button id="singnout" class="anybtton">Logout</button>
+
+        <script>!(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+              "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.0/lib/index.js"),
+              // Replace 1.x.x with the version that you want
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  {
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005",
+                    title: 'Psykh',
+                    subtitle: 'Say Hello',
+                    
+                    // add other props here
+                  },
+                  null
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+          })();
+          localStorage.clear();
+          </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="js/landing.js"></script>
+ 
+    
+
+
+    
+</body>
+
+
+</html>
